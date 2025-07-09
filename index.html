@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Eli</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="decoracion-superior">💐💌🌸❤️🌷💖</div>
+
+  <div class="sobre" id="sobre" onclick="abrirCarta()">
+    <div class="solapa"></div>
+    <div class="frente">Haz clic para abrir el sobre 💌</div>
+  </div>
+
+  <div class="carta" id="carta">
+    <div class="contenido">
+      <h2>🌷 Para mi querida Eli 🌷</h2>
+      <p>
+        Eli hermosa, nos conocimos sin querer queriendo, todos estos años han sido muy bonitos jkasdj aunque nuestros ex's nos distanciaron :) aquí seguimos después de todo y eso demuestra lo fuerte que es nuestra amistad, en todo este tiempo he llegado a conocer muchas cosas de ti, haz llorado conmigo, he llorado contigo, nos hemos reído, te he aconsejado a pesar que no me hagas caso :) y siempre que haz querido un amigo ahí estado para ti❤️, te quiero muchísimo mi Eli❤️, sé que estamos separados por la distancia pero de todo corazón deseo algún día poder vernos y darnos ese abrazo que tanto queremos❤️, espero te guste este pequeño detalle que hice con mucho cariño para ti, eres la mejor🫶🏻❤️
+      </p>
+    </div>
+  </div>
+
+  <div class="decoracion-inferior">💖🌼💝🌺💌🌹</div>
+
+  <script>
+    function abrirCarta() {
+      document.getElementById("sobre").classList.add("abrir");
+      setTimeout(() => {
+        document.getElementById("sobre").style.display = "none";
+        document.getElementById("carta").style.display = "block";
+      }, 1200);
+    }
+  </script>
+</body>
+</html>
